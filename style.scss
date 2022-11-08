@@ -1,0 +1,124 @@
+@use "Sass_partials/resets";
+@use "Sass_partials/variables"as v;
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+}
+
+// === Button ===
+.btn {
+    font: {
+        family: v.$font;
+        weight: 700;
+        size: v.$p-m;
+    }
+
+    text-align: center;
+    line-height: 28px;
+    color: v.$white;
+    padding: 14px 32px;
+    border-radius: 28px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+// === Main SCSS ===
+
+.container {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    font-family: v.$font;
+    width: 100vw;
+    overflow: hidden;
+
+    main {
+        margin: 1.5rem 10.3rem 6.9rem 10.30rem;
+
+
+        //===NAVIGATION===
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+
+
+            a {
+                background-color: v.$dark-blue;
+            }
+        }
+
+        //===HERO DISPLAY===
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+            .hero-text {
+                width: 51%;
+
+                h1 {
+                    font-size: v.$h1;
+                    color: v.$dark-blue;
+                    margin-bottom: 1.8rem;
+                }
+
+                p {
+                    font-size: v.$p-m;
+                    color: v.$gray;
+                    line-height: 1.75rem;
+                    margin-bottom: 2.5rem;
+                    max-width: 80%;
+
+                }
+
+                a {
+                    background-image: v.$light-gradient;
+                    padding: 18px 32px;
+                    border-radius: 31px;
+                }
+
+            }
+
+            .hero-img {
+                width: 55%;
+
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                    transform: translate(41%, -20%) scale(1.6);
+                }
+            }
+        }
+    }
+
+    // ====SECTION COURSES====
+    .courses {
+        background-image: linear-gradient(#FFFFFF, #F0F1FF);
+        padding: 0 10.3rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.9rem;
+        row-gap: 3.5rem;
+
+        div {
+            width: 350px;
+            height: 322px;
+            border-radius: 15px;
+            background-color: v.$white;
+        }
+
+        .course-box-first {
+            background-image: v.$light-gradient;
+
+        }
+    }
+}

@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+}
+
+.btn {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 28px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100vw;
+  overflow: hidden;
+}
+.container main {
+  margin: 1.5rem 10.3rem 6.9rem 10.3rem;
+}
+.container main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.container main nav a {
+  background-color: #13183f;
+}
+.container main .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container main .hero .hero-text {
+  width: 51%;
+}
+.container main .hero .hero-text h1 {
+  font-size: 3.5rem;
+  color: #13183f;
+  margin-bottom: 1.8rem;
+}
+.container main .hero .hero-text p {
+  font-size: 1.125rem;
+  color: #83869A;
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
+  max-width: 80%;
+}
+.container main .hero .hero-text a {
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+  padding: 18px 32px;
+  border-radius: 31px;
+}
+.container main .hero .hero-img {
+  width: 55%;
+}
+.container main .hero .hero-img img {
+  position: relative;
+  z-index: -1;
+  transform: translate(41%, -20%) scale(1.6);
+}
+.container .courses {
+  background-image: linear-gradient(#FFFFFF, #F0F1FF);
+  padding: 0 10.3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1.9rem;
+       column-gap: 1.9rem;
+  row-gap: 3.5rem;
+}
+.container .courses div {
+  width: 350px;
+  height: 322px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.container .courses .course-box-first {
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+}/*# sourceMappingURL=style.css.map */
