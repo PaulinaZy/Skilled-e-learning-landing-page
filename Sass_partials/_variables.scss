@@ -1,0 +1,24 @@
+// === COLORS ===
+$white: #fff;
+$light-pink: #ffa7c3;
+$dark-pink: #f74780;
+$gray: #83869A;
+$dark-blue: #13183f;
+$blue: #666ca3;
+$light-gradient: linear-gradient(#ff6f48, #f02aa6);
+$dark-gradient: linear-gradient(#4851ff, #f02aa6);
+
+// === TYPOGRAPHY ===
+
+$font: 'Plus Jakarta Sans',
+sans-serif;
+
+$h1: 3.5rem;
+$h2: 2.5rem;
+$h3: 2rem;
+$h4: 1.5rem;
+$p-m: 1.125rem;
+$p-s: 1rem;
+
+$breakpoints: (tablet: 768px,
+    monitor: 1440px)
